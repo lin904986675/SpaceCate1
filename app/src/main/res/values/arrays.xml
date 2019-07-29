@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="titles">
+        <item>全部</item>
+        <item>审核中</item>
+        <item>进行中</item>
+        <item>已完成</item>
+    </string-array>
+
+    <string-array name="titles2">
+        <item>全部</item>
+        <item>进行中</item>
+        <item>已完成</item>
+    </string-array>
+    
+    <string-array name="screen">
+        <item>好评</item>
+        <item>销量</item>
+        <item>距离</item>
+        <item>推荐</item>
+        <item>价格</item>
+        <item>口碑</item>
+    </string-array>
+    
+</resources>

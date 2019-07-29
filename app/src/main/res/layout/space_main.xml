@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp">
+
+
+
+        <TextView
+            android:id="@+id/home_title"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:text="首页"
+            android:textColor="@color/tv_black"
+            android:textSize="20dp"
+            android:background="#FFFFFF"/>
+
+        <RadioButton
+            android:id="@+id/home_Search"
+            style="@style/radibuton"
+            android:layout_width="52dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:drawableTop="@mipmap/home_main" />
+
+    </RelativeLayout>
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="8"
+        android:rowCount="4">
+
+        <com.youth.banner.Banner
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="197dp"
+            android:layout_row="1"
+            android:layout_columnSpan="5"
+            tools:ignore="MissingConstraints">
+
+        </com.youth.banner.Banner>
+        <RadioGroup
+            android:id="@+id/radioGroup2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FBFFFFFF"
+            android:orientation="horizontal"
+            android:layout_row="2"
+            android:layout_columnSpan="4">
+        <RadioButton
+            android:id="@+id/food"
+            style="@style/radibuton"
+            android:layout_width="105dp"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:background="@drawable/button_btn_focus"
+            android:textColor="#FFFFFF"
+            android:text="中餐" />
+
+        <RadioButton
+            android:id="@+id/snack"
+            style="@style/radibuton"
+            android:layout_width="105dp"
+            android:layout_height="50dp"
+            android:layout_row="2"
+            android:background="@drawable/button_btn_focus"
+            android:textColor="#FFFFFF"
+            android:text="特色小吃" />
+
+        <RadioButton
+            android:id="@+id/western"
+            style="@style/radibuton"
+            android:layout_width="105dp"
+            android:layout_row="2"
+            android:background="@drawable/button_btn_focus"
+            android:textColor="#FFFFFF"
+            android:text="西餐" />
+
+            <RadioButton
+                android:id="@+id/west"
+                style="@style/radibuton"
+                android:layout_width="105dp"
+                android:layout_row="2"
+                android:background="@drawable/button_btn_focus"
+                android:textColor="#FFFFFF"
+                android:text="西点" />
+        </RadioGroup>
+    </GridLayout>
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="4"
+        android:rowCount="4">
+
+        <Button
+            style="@style/radibuton"
+            android:layout_width="207dp"
+            android:layout_height="96dp"
+            android:layout_row="0"
+            android:layout_rowSpan="2"
+            android:layout_columnSpan="2"
+            android:background="#FFFFFF"
+            android:text="平台活动" />
+
+        <Button
+            android:layout_width="102dp"
+            android:background="#FFFFFF"
+            style="@style/radibuton"
+            android:text="推荐1" />
+
+        <Button
+            android:layout_width="102dp"
+            android:background="#FFFFFF"
+            style="@style/radibuton"
+            android:text="推荐2" />
+
+        <Button
+            android:layout_width="102dp"
+            android:background="#FFFFFF"
+            style="@style/radibuton"
+            android:text="推荐3" />
+
+        <Button
+            android:layout_width="102dp"
+            android:background="#FFFFFF"
+            style="@style/radibuton"
+            android:text="推荐4" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:orientation="horizontal"
+            android:layout_columnSpan="4">
+
+            <TextView
+                style="@style/radibuton"
+                android:layout_width="285dp"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:text="优惠商家"
+                android:textSize="17dp" />
+
+            <Button
+                style="@style/radibuton"
+                android:layout_width="130dp"
+                android:layout_height="33dp"
+                android:text="排序"
+                android:textSize="17dp"
+                android:background="#FFFFFF"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:text="筛选:"
+                android:textSize="17dp" />
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="2"
+                android:entries="@array/screen">
+            </Spinner>
+        </RadioGroup>
+    </GridLayout>
+    <View
+        android:id="@+id/home_titlely"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line_dirve" />
+
+    <FrameLayout
+        android:id="@+id/fag"
+        android:layout_width="match_parent"
+        android:layout_height="308dp"
+        android:layout_alignParentStart="true"
+        android:layout_weight="1" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FBFFFFFF"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioMain"
+            style="@style/radibuton"
+            android:drawableTop="@drawable/bottom_btn_home"
+            android:text="首页" />
+
+        <RadioButton
+            android:id="@+id/radioForm"
+            style="@style/radibuton"
+            android:drawableTop="@drawable/bottom_btn_message"
+            android:text="订单" />
+
+        <RadioButton
+            android:id="@+id/radioName"
+            style="@style/radibuton"
+            android:drawableTop="@drawable/bottom_btn_mine"
+            android:text="个人中心" />
+
+    </RadioGroup>
+
+</LinearLayout>
